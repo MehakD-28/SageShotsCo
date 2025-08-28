@@ -1,0 +1,157 @@
+.hero{
+    border: none !important;
+}
+
+.video{
+    height:1400px;
+    /* background-color: #c2c5aa; */
+}
+
+.loveletters{
+    height: 200px;
+    background-color: #656D4A !important;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px !important;
+}
+
+#loveletter{
+    color: white;
+    height: 380px;
+    width: 500px;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    align-items: center;
+    padding: 100px;
+    line-height: 2em;
+}
+
+#loveletter h3{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+     font-style: normal;
+      font-size: 35px;
+}
+
+.video{
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows:  repeat(18,1fr);
+    position: relative;
+}
+#head1 {
+    grid-row: 2/5;
+    grid-column:7/13;
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    color: #b98b73;
+}
+
+#head1 span {
+    font-size: 50px;
+    font-family: "Monsieur La Doulaise", cursive;
+    color: #7f4f24;
+}
+
+.protfolio{ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.video .video1{
+    grid-column:2/6;
+    grid-row: 2/9;
+    
+}
+
+.video .video2{
+    grid-column:14/17;
+    grid-row: 2/9;
+    
+}
+
+.video .video3{
+    grid-column:7/12;
+    grid-row: 7/17;
+   
+}
+
+.video .video4{
+    grid-column:3/5;
+    grid-row: 11/18;
+    
+}
+
+.video .video5{
+    grid-column:13/18;
+    grid-row: 12/16; 
+}  
+
+
+@media (max-width: 992px) {
+    .video1{
+        grid-column:2/4 !important;
+        grid-row: 2/8 !important;
+        
+    }
+    .video2{
+        grid-column:14/16 !important;
+        grid-row: 2/8 !important;
+        
+    }
+    .video3{
+        grid-column:8/11 !important;
+        grid-row: 7/15 !important;
+       
+    }
+    .video4{
+        grid-column:4/5 !important;
+        grid-row: 11/16 !important;
+        
+    }
+    .video5{
+        grid-column:14/18 !important;
+        grid-row: 12/16 !important; 
+    } 
+    #head1 {
+        grid-row: 17/18;
+        grid-column:2/18;
+        font-size: 20px;
+    } 
+  }
+
+  @media (max-width: 600px) {
+    .video1{
+        grid-column:2/3 !important;
+        grid-row: 2/6 !important;
+        
+    }
+    .video2{
+        grid-column:14/15 !important;
+        grid-row: 2/7 !important;
+        
+    }
+    .video3{
+        grid-column:9/11 !important;
+        grid-row: 8/13 !important;
+       
+    }
+    .video4{
+        grid-column:4/5 !important;
+        grid-row: 13/18 !important;
+        
+    }
+    .video5{
+        grid-column:14/16 !important;
+        grid-row: 12/15 !important; 
+    }  
+    #head1 {
+        grid-row: 16/18;
+        grid-column:13/18;
+        font-size: 15px;
+    }
+  }

@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    font-family: Arial;
+    border: border-box;
+    position: relative;
+    overflow: visible;
+} 
+
+.mehacollage{
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows:  repeat(18,1fr);
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.mehak1{
+    background-image: url("/photos/mehak1.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column:2/6;
+    grid-row: 3/15;
+}
+
+@media (min-width: 620px) and (max-width: 1204px) {
+    .mehak2 {
+        
+      grid-column: 7 / 13 !important;   
+      grid-row: 3 / 15 !important;      
+    }
+    .mehak3{ 
+        display: block;
+        grid-column: 15 / 18 !important;   
+        grid-row: 5 / 12 !important;
+     }
+    .mehak1{
+        display: block;
+        grid-column: 2/ 5;   
+        grid-row: 5 / 12; 
+    }
+
+  }
+
+.mehak2{
+    background-image: url("/photos/mehak2.jpg");
+    background-size: cover;
+    background-position: center !important;
+    grid-column:7/13;
+    grid-row: 1/17;
+
+}
+.videomehak{
+    grid-column:7/13;
+    grid-row: 1/17;
+}
+
+.mehak3{
+    background-image: url("/photos/mehak3.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column:14/18;
+    grid-row: 3/15;
+}
+
+.mehatext {
+    height: 400px;
+    background-color: #757d5bc7;
+    text-align: center;
+    color: white;
+    padding: 50px;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;;
+    /* line-height: 4em; */
+}
+
+.mehatext h3{
+    font-size:90px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    
+}
+
+#text1{
+    text-align: start;
+}
+
+#text2{
+    text-align: center;
+}
+#text3{
+    text-align: end;
+}
+
+#abouttext{
+    font-size: 17px;
+}
+
+.aboutmeha{
+    height: 600px;
+    display: flex;
+    
+}
+
+#photoabout{
+    background-image: url("/photos/photoabout.jpg");
+    background-size: cover;
+    height: 600px;
+    width: 38em;
+}
+
+#textabout {
+    width:54em;
+    color: #656D4A;
+    line-height: 2em;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+#textabout #photoabout{
+    flex:1;
+    height: auto;
+    min-width: 50%;
+}
+
+.textabout h3{
+    height: 50px;
+    color: #656D4A;
+    padding-left: 150px;
+    font-size: 35px;
+    font-weight: 100;
+    ;
+}
+
+.textabout p {
+    color: #656D4A;
+    padding-left: 150px !important;
+    padding-right: 150px !important;
+    padding-top: 100px !important;
+}
+
+.textabout p span{
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+}
+
+  
+
+@media( max-width: 767px){
+    .mehak3{ display: none !important; }
+    .mehak1{ display: none !important; }
+    .mehak2 {
+        
+        grid-column: 2 / 18 !important;   
+        grid-row: 3 / 17 !important;      
+      }
+    .mehatext h3{
+        font-size:50px ;
+    }
+    #text2{
+        text-align: start;
+    }
+    #text3{
+        text-align: center;
+    }
+    #text1{
+        text-align: center;
+    }
+    .textabout p {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+        padding-top: 50px !important;
+    }
+    
+    .textabout h3{
+        padding-left: 50px;
+        font-size: 30px;
+    }
+}

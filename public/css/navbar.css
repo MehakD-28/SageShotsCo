@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    font-family: Arial;
+    border: border-box;
+    position: relative;
+    overflow: visible;
+}
+
+.navbar{
+    height: 80px !important;
+    color:  #707f62 !important;
+    font-family: Arial !important;
+    background-color: white !important;
+
+}
+
+.nav-item{
+    margin-right: 1.5rem;
+}
+
+#logoimage{
+    height: 3.35em;
+    width: 8em;
+    margin-left: 1rem;
+}
+#navbarNav {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+  }
+  

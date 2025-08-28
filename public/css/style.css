@@ -1,0 +1,199 @@
+
+*{
+    margin:0;
+    font-family: Arial;
+    border: border-box;
+    position: relative;
+    overflow: visible;
+}    
+
+
+.card{
+    margin: 0%;
+}
+
+.servicesdetails{
+    background-color: #656D4A;
+}
+
+.servicesdetails h3 span{
+    font-size: 60px;
+    font-style: italic;
+    color: white;
+    font-family: "Dancing Script", cursive;
+}
+
+.service-content p{
+    margin: 10px !important ;
+}
+
+.service-head{
+    font-size: 60px !important;
+    font-style: italic !important;
+    font-family: "Dancing Script", cursive !important;
+    margin: 5rem !important;
+}
+
+.servicesdetails h3{
+    padding: 100px;
+    font-size: 60px;
+    font-style: italic;
+    color: white;
+}
+
+.servicesdetails p{
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+     font-weight: 100;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    line-height: 2em;
+}
+
+@media( max-width: 767px){
+    .servicesdetails h3{
+        padding: 10px;
+        font-size: 40px;}
+    .servicesdetails p{
+        padding: 10px;}
+    .all-packages{
+        flex-direction: column;
+    }
+    .all-package{
+        width: 35rem !important;}
+}
+
+.services-one{
+    height: 600px ;
+    background-color:#afbea3 !important;
+    position: relative;
+    overflow: visible;
+    color: white !important;;
+}
+
+.all-packages{
+    background-color: white;
+    text-align: center;
+    margin-bottom: 3rem;
+    color:#656D4A;
+}
+
+.all-packages h4{
+    font-size: 3rem;
+    font-style: italic;
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+}
+
+.all-package-container{
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.all-package{
+    width: 45rem;
+    color: #656D4A;
+    text-align: center;
+}
+
+#rightborder{
+    border-right: 2px solid #656D4A;
+}
+
+.all-package p{
+    margin:70px
+}
+
+.content{
+    height:400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.headingtwo{
+    height: 150px;
+}
+
+.headingthree{
+    height: 150px;
+}
+
+.content-details{
+    width: 30em;
+    padding: 50px;
+    /* color: white; */
+    text-align: left;
+    font-family: "Major Mono Display", monospace;
+    line-height: 4em;
+}
+
+.content-video{
+    width: 20em;
+    padding: 50px;
+    background-image: url("img3.jpg");
+    background-size: cover;
+}
+
+.services-heading{
+    color: white;
+    text-align: left;
+    padding-left: 100px;
+    font-size: 50px;
+    font-family: "Raleway";
+    font-weight: 400;
+}
+
+.services-two{
+    height: 600px ;
+    color:#656D4A !important;
+}
+
+.services-three{
+    height: 600px ;
+    background-color:#656D4A !important;
+    color: white !important;
+}
+
+.services-four{
+    height: 600px ;
+    color: #656D4A !important;
+}
+
+.service-video{
+    padding: 5rem;
+}
+
+/* #service-head1{
+    position: sticky;
+    top: 0px;
+    background-color: #936639;;
+}
+
+#service-head2{ 
+    position: sticky;
+    top: 150px;
+    background-color: #656D4A;
+}
+
+#service-head3{
+    position: sticky;
+    top: 300px;
+    background-color: #A68a64;
+} */
+
+#clientform{
+    color: white;
+    line-height: 3em;
+    font-size: 20px;
+}
+
+
+#clientform input{
+    width: 600px; /* or try: 100%, 20rem, etc. */
+    padding: 8px;  
+    font-size: 16px;
+
+}

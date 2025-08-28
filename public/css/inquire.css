@@ -1,0 +1,12 @@
+
+  @media (max-width: 650px){
+    
+    #photoform{
+        display: none; 
+    
+    }
+  }
+
+  .inquiryForm{
+    background-color: rgb(112, 127, 98, 0.75) !important;
+  }
