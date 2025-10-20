@@ -1,17 +1,38 @@
 
-  @media (max-width: 650px){
-    
-    #photoform{
-        display: none; 
-    
-    }
+.videomehak {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.video-col {
+  display: flex;
+}
+
+
+@media (max-width: 768px) {
+  .row.g-0 {
+    display: flex;
+    flex-direction: column;
   }
 
-  @media (max-width: 768px) {
-    .inquiryForm .card-body {
-      margin-top: 1rem;
-    }
+  .video-col {
+    order: -1; /* video on top */
+    height: auto;
   }
+
+  .videomehak {
+    height: auto;
+    width: 100%;
+  }
+
+  .inquiryForm .card-body {
+    margin-top: 1rem;
+  }
+}
+
   
 
   .inquiryForm{
