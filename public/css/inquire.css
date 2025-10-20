@@ -7,6 +7,13 @@
     }
   }
 
+  @media (max-width: 768px) {
+    .inquiryForm .card-body {
+      margin-top: 1rem;
+    }
+  }
+  
+
   .inquiryForm{
     background-color: rgb(112, 127, 98, 0.75) !important;
   }

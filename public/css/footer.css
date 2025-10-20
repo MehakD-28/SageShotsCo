@@ -1,31 +1,61 @@
-.sage-date{
-    display: flex;
-    justify-content: center !important;
-    align-items: center !important;
+.sage-date {
+    position: relative;
     border: none !important;
-    aspect-ratio: 16 / 9;  /* keeps perfect rectangle shape */
-    overflow: hidden;      /* hides extra parts of the image */
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
     border-radius: 15px;
   }
   
-  .sage-date img {
+  /* Make sure the image fills the card area */
+  .sage-date .card-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: brightness(95%); /* optional for text contrast */
   }
-
-.sage-date p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: "Manrope", sans-serif;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  font-size: 80px;        /* adjust for mobile */
-  color: #707f62;
-  margin: 0;
-}
+  
+  /* Overlay container */
+  .sage-date .sage-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  /* Heading */
+  .sage-date p.sage {
+    font-family: "Manrope", sans-serif;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-size: 80px;
+    color: #707f62;
+    margin-bottom: 25px;
+  }
+  
+  /* Button styling */
+  .sage-date a.btn {
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #707f62;
+    background-color: #f5f7f4;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+  
+  .sage-date a.btn:hover {
+    background-color: #707f62;
+    color: #f5f7f4;
+    text-decoration: none;
+  }
+  
+  
 
 .footer{
     height: 400px;
@@ -97,13 +127,17 @@
 }
 
 @media (max-width: 1219px) {
-    .sage-date p {
+    .sage-date p.sage {
         font-size: 60px;
     }
+    .sage-date a.btn {
+        font-size: 0.9rem;
+        padding: 10px 24px;
+      }
 }
 
 @media (max-width: 1025px) {
-    .sage-date p {
+    .sage-date p.sage {
         font-size: 1.2rem;
     }
     .footerBox{
@@ -116,9 +150,13 @@
 
 }
 @media (max-width: 600px) {
-    .sage-date p {
+    .sage-date p.sage {
         font-size: 0.8rem;
     }
+    .sage-date a.btn {
+        font-size: 0.8rem;
+        padding: 8px 20px;
+      }
     .footer-videos{
         height: 200px;
     }
