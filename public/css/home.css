@@ -139,6 +139,7 @@
     aspect-ratio: auto;
     max-width: 90vw;
     margin: 0 auto;
+    height:fit-content;
   }
 
   #head1 {
