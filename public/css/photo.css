@@ -116,42 +116,58 @@
     text-align: start;
 }
 
-@media (max-width: 550px) {
-    .photoCollage {
-        height: 650px !important;
-      }
-    .photoCollage .three{
-      
-        grid-column:15/19;
-        grid-row: 3/9;
-       
-       
-    }
- 
-    
-    .photoCollage .five{
-        grid-column:11/15;
-        grid-row: 9/16;
-    }
-    
-    .photoCollage .six{
-        grid-column:16/20;
-        grid-row: 8/15;
-    }
+
+/* ---------- Mobile: show ONLY the bottom 3 and make a tidy collage ---------- */
+@media (max-width: 550px){
+  .photoCollage{
+    /* ditch the 18x18 grid on phones */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(110px, 22vh);
+    gap: 8px;
+    padding: 8px;
+    height: auto;              /* no forced 650px */
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Hide the top three tiles */
+  .photoCollage .six,
+  .photoCollage .five,
+  .photoCollage .three{
+    display: none !important;
+    background-image: none !important; /* avoid downloading on mobile */
+  }
+
+  /* Keep your background rules */
+  .photoCollage .four,
+  .photoCollage .two,
+  .photoCollage .one{
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;       /* optional, remove if you want square corners */
+  }
+
+  /* Collage layout (wide hero + two portrait tiles) */
+  .photoCollage .four{ grid-column: 1 / 7; aspect-ratio: 16 / 9; } /* wide on top */
+  .photoCollage .two { grid-column: 1 / 4; aspect-ratio: 3 / 4;  } /* left portrait */
+  .photoCollage .one  { grid-column: 4 / 7; aspect-ratio: 3 / 4;  } /* right portrait */
 }
-    
 
-@media (max-width: 768px) {
-    .photoCollage {
-      height: 650px !important;
-    }
+/* Slightly larger phones/tablets can use the same layout */
+@media (min-width: 551px) and (max-width: 768px){
+  .photoCollage{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(120px, 24vh);
+    gap: 10px;
+    padding: 10px;
+    height: auto;
+  }
+  .photoCollage .six,
+  .photoCollage .five,
+  .photoCollage .three{ display:none !important; background-image:none !important; }
+  .photoCollage .four{ grid-column: 1 / 7; aspect-ratio: 16 / 9; }
+  .photoCollage .two { grid-column: 1 / 4; aspect-ratio: 3 / 4;  }
+  .photoCollage .one  { grid-column: 4 / 7; aspect-ratio: 3 / 4;  }
 }
-
-
-  @media (max-width: 900px) {
-    .photoCollage {
-      height: 700px;
-    }
-  } 
-  
-
