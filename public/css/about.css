@@ -144,73 +144,8 @@
     color: #656d4a;
   }
   
-  /* ---------- Mobile layout ---------- */
-  @media (max-width: 768px) {
-    .about {
-      flex-direction: column; /* stack vertically */
-    }
-  
-    /* place the image first when stacked */
-    .about-img {
-      order: 1;
-    }
-  
-    .about-text {
-      order: 2;
-      padding: 1rem;
-    }
-  
-    .about-text h3 {
-      font-size: 1.4rem;
-      margin-top: 1.2rem;
-    }
-  }
-/* 
-#photoabout{
-    background-image: url("/photos/photoabout.jpg");
-    background-size: cover;
-    height: 600px;
-    width: 38em;
-}
-
-#textabout {
-    width:54em;
-    color: #656D4A;
-    line-height: 2em;
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-}
-
-#textabout #photoabout{
-    flex:1;
-    height: auto;
-    min-width: 50%;
-}
-
-.textabout h3{
-    height: 50px;
-    color: #656D4A;
-    padding-left: 150px;
-    font-size: 35px;
-    font-weight: 100;
-    ;
-}
-
-.textabout p {
-    color: #656D4A;
-    padding-left: 150px !important;
-    padding-right: 150px !important;
-    padding-top: 100px !important;
-}
-
-.textabout p span{
-    font-family: "Dancing Script", cursive;
-    font-size: 30px;
-}
-
-*/  
+ 
+ 
 
 @media( max-width: 767px){
     .mehak3{ display: none !important; }
@@ -220,11 +155,16 @@
         grid-column: 2 / 18 !important;   
         grid-row: 3 / 17 !important;      
       }
+
+    .mehatext{
+        height: 280px;
+    }
     .mehatext h3{
-        font-size:50px ;
+        font-size:40px ;
+        text-align: center;
     }
     #text2{
-        text-align: start;
+        text-align: center;
     }
     #text3{
         text-align: center;
@@ -232,6 +172,24 @@
     #text1{
         text-align: center;
     }
+
+    .about {
+        flex-direction: column; 
+      }
+    
+      .about-img {
+        order: 1;
+      }
+    
+      .about-text {
+        order: 2;
+        padding: 1rem;
+      }
+    
+      .about-text h3 {
+        font-size: 1.4rem;
+        margin-top: 1.2rem;
+      }
    
     
 } 

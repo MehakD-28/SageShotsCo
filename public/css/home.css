@@ -129,7 +129,47 @@
 }
 
 
-@media (max-width: 600px){
+/* === MOBILE PORTRAIT (iOS-SAFE) === */
+@media (max-width: 768px) and (orientation: portrait) {
+  .video {
+    display: grid;
+    grid-template-columns: 1fr;   /* 1 column layout */
+    gap: 12px;
+    padding: 12px;
+    aspect-ratio: auto;
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+
+  #head1 {
+    position: static;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+  }
+
+
+  .protfolio {
+    position: relative;
+    display: block;
+    width: 70%;
+    height: auto;
+    aspect-ratio: 9 / 16;  
+    
+  }
+
+  .video1, .video5 {
+    display: none !important;
+  }
+
+  .video2 { order: 1; }
+  .video3 { order: 2;
+  top:6% }
+  .video4 { order: 3; }
+}
+
+
+/* @media (max-width: 600px){
   #head1 { font-size: 20px; top: 1%; }
   .video1{ width: 16%; height: 38%; }
   .video2{ width: 16%; height: 38%; }
@@ -146,7 +186,7 @@
     .video4{ left:18%;width: 10%; height: 25%; }
     .video5{display: none };
     }
-  
+   */
   
 
 /* .video{
