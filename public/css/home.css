@@ -2,27 +2,27 @@
     border: none !important;
 }
 
+
+
 .video{
     height:1400px;
-    /* background-color: #c2c5aa; */
+   
 }
 
 .loveletters{
-    height: 200px;
+    height: 300px !important;
     background-color: #656D4A !important;
     display: flex; 
     justify-content: center;
-    align-items: center;
+  
     border-radius: 0px !important;
 }
 
 #loveletter{
     color: white;
     height: 380px;
-    width: 500px;
-    font-family: "Playfair Display", serif;
-    text-align: center;
-    align-items: center;
+    font-family: "Playfair Display", serif!important;
+    font-style: italic;
     padding: 100px;
     line-height: 2em;
 }
@@ -75,8 +75,8 @@
 }
 
 .video .video3{
-    grid-column:7/12;
-    grid-row: 7/17;
+    grid-column:7/12 !important;
+    grid-row: 7/17 !important;
    
 }
 
@@ -93,6 +93,9 @@
 
 
 @media (max-width: 992px) {
+    #loveletter{
+        padding: 50px;
+    }
     .video1{
         grid-column:2/4 !important;
         grid-row: 2/8 !important;
@@ -125,6 +128,13 @@
   }
 
   @media (max-width: 600px) {
+    .loveletters{
+        height: 550px !important;
+
+    }
+    #loveletter{
+        padding: 50px;
+    }
     .video1{
         grid-column:2/3 !important;
         grid-row: 2/6 !important;
@@ -155,3 +165,155 @@
         font-size: 15px;
     }
   }
+
+
+
+.reviews-section{
+    background-color: #dde5d2;
+    padding: 1rem 0;
+}
+ .rv {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr auto; /* arrow | video | content | arrow */
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1rem 0;
+    position: relative;
+    
+  }
+
+  .rv-heading {
+    position: absolute;
+    top: 10px;
+    right: 30px;              /* aligns text to the end/right side */
+    text-align: end;          /* ensures right alignment */
+    font-size: 5rem;
+    font-family: "Dancing Script", cursive;
+    color: rgba(0, 0, 0, 0.05); /* subtle, watermark effect */
+    letter-spacing: 1px;
+    margin: 0;
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .rv-quote {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    position: relative;
+    color: #333;
+  }
+  
+  
+  .rv-quote::before {
+    content: "“";
+    font-size: 4rem;
+    color: #cfcfcf;
+    position: absolute;
+    left: -10px;
+    top: -20px;
+    line-height: 1;
+  }
+  
+  
+  .rv-quote::after {
+    content: "”";
+    font-size: 2rem;
+    color: #aaa;
+    position: relative;
+    bottom: -0.2rem;
+    margin-left: 0.1rem;
+  }
+  
+  
+  /* Nav arrows (both sides) */
+  .rv-nav {
+    position: relative; /* stays in grid flow */
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0.08);
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+  }
+  .rv-nav:hover { background: rgba(0, 0, 0, 0.15); }
+  
+  /* Video and content same height */
+  .rv-video-panel {
+    border-radius: 16px;
+    overflow: hidden;
+    background: #000;
+    aspect-ratio: 9 / 12;
+    max-width: 420px;
+    height: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  }
+  .rv-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Review content area */
+  .rv-content {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .rv-inner {
+    text-align: center;
+    max-width: 500px;
+  }
+  
+  /* Dots below text */
+  .rv-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+    margin-top: 1rem;
+  }
+  .rv-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: #cfd4d9;
+    border: none;
+    cursor: pointer;
+  }
+  .rv-dot[aria-selected="true"] { background: #111; }
+  
+  /* Mobile adjustments */
+  @media (max-width: 768px) {
+    .rv {
+      grid-template-columns: 1fr; /* one column layout */
+    }
+    .rv-video-panel {
+      display: none; /* hide video */
+    }
+    .rv-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .rv-prev { left: 10px; }
+    .rv-next { right: 10px; }
+
+    .rv-heading {
+        text-align: center;       
+        font-size: 2rem;
+        
+      }
+  }
+  

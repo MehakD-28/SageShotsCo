@@ -29,9 +29,10 @@
 
 .service-head{
     font-size: 60px !important;
-    font-style: italic !important;
-    font-family: "Dancing Script", cursive !important;
-    margin: 5rem !important;
+    font-family: Arial !important;
+    /* font-style: italic !important;
+    font-family: "Dancing Script", cursive !important; */
+
 }
 
 .servicesdetails h3{
@@ -104,7 +105,7 @@
 }
 
 .all-package p{
-    margin:70px
+    margin:60px
 }
 
 .content{
@@ -197,3 +198,16 @@
     font-size: 16px;
 
 }
+
+.video-container {
+    width: 100%;
+    max-width: 400px;  /* limits max video size */
+    overflow: hidden;
+  }
+  
+  .video-container video {
+    margin-left: 25px;
+    width: 80%;
+    height: auto;
+    display: block;
+  }

@@ -7,9 +7,9 @@
 
       </div>
 
+      
     <div class="video">
-        <p id="head1">We’re storytellers at heart. At Sage Shots Co, we use our lens to hold onto the raw, unposed moments 
-          that tell the real story of your love and celebration.</p>
+        <p id="head1">You’re here because I know you appreciate the beauty in real moments. Stay a while, let me show you what storytelling looks like.</p>
         <video class="protfolio video1" autoplay muted loop playsinline>
             <source src="/videos/main1.mp4" type="video/mp4">
           </video>
@@ -28,10 +28,48 @@
 
     </div>
     
-    <div class="card loveletters">
-        <div class="card-body" id="loveletter">
-          This is some text within a card body.
+    <div class="reviews-section">
+      <h2 class="rv-heading">Love Letters</h2>
+      <!-- Reviews Section -->
+      <section class="rv" aria-label="Customer reviews">
+        <!-- Left Arrow -->
+        <button class="rv-nav rv-prev" aria-label="Previous review" type="button">&#10094;</button>
+      
+        <!-- Left: Video -->
+        <div id="rv-video-panel" class="rv-video-panel">
+          <video id="rv-video"
+                 class="rv-video"
+                 preload="metadata"
+                 autoplay
+                 muted
+                 loop
+                 playsinline
+                 poster="">
+            <source id="rv-video-src" src="" type="video/mp4">
+          </video>
         </div>
-      </div>
-    
+      
+        <!-- Right: Review content -->
+        <div class="rv-content">
+          <div class="rv-inner">
+            <div class="rv-title">
+              <h3 id="rv-name" class="rv-name"></h3>
+              <p id="rv-role" class="rv-role"></p>
+            </div>
+            <blockquote id="rv-quote" class="rv-quote"></blockquote>
+            <div class="rv-dots" role="tablist" aria-label="Review navigation"></div>
+          </div>
+        </div>
+      
+        <!-- Right Arrow -->
+        <button class="rv-nav rv-next" aria-label="Next review" type="button">&#10095;</button>
+      
+  <!-- Inject reviews into the page -->
+  <script id="reviews-data" type="application/json">
+    <%- JSON.stringify(reviews || []) %>
+  </script>
+  <script src="/js/reviews-rotator.js" defer></script>
+  
+</section>
+</div>
     

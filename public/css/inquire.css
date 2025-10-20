@@ -10,3 +10,10 @@
   .inquiryForm{
     background-color: rgb(112, 127, 98, 0.75) !important;
   }
+
+  .photoinfo p {
+    font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  color: #f5f7f4;
+  letter-spacing: 1px;
+  }
