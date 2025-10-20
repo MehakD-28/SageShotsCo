@@ -210,7 +210,7 @@
     font-size: 30px;
 }
 
-  
+*/  
 
 @media( max-width: 767px){
     .mehak3{ display: none !important; }
@@ -232,17 +232,9 @@
     #text1{
         text-align: center;
     }
-    .textabout p {
-        padding-left: 50px !important;
-        padding-right: 50px !important;
-        padding-top: 50px !important;
-    }
+   
     
-    .textabout h3{
-        padding-left: 50px;
-        font-size: 30px;
-    }
-} */
+} 
 
 .reviewForm{
     height: 600px;
