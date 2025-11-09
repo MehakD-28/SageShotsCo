@@ -207,34 +207,13 @@
   .rv-quote {
     margin: 0;
     font-size: 1.1rem;
-    line-height: 2.6;
     position: relative;
     color: #333;
   }
   
   
-  .rv-quote::before {
-    content: "“";
-    font-size: 4rem;
-    color: #cfcfcf;
-    position: absolute;
-    left: -10px;
-    top: -20px;
-    line-height: 1;
-  }
   
-  
-  .rv-quote::after {
-    content: "”";
-    font-size: 2rem;
-    color: #aaa;
-    position: relative;
-    bottom: -0.2rem;
-    margin-left: 0.1rem;
-  }
-  
-  
-  /* Nav arrows (both sides) */
+
   .rv-nav {
     position: relative; /* stays in grid flow */
     width: 48px;

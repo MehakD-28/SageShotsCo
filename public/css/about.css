@@ -19,7 +19,7 @@
     background-image: url("/photos/mehak1.jpg");
     background-size: cover;
     background-position: center;
-    grid-column:2/7;
+    grid-column:2/6;
     grid-row: 3/15;
 }
 
@@ -46,7 +46,7 @@
     background-image: url("/photos/mehak2.jpg");
     background-size: cover;
     background-position: center !important;
-    grid-column:8/12;
+    grid-column:7/13;
     grid-row: 1/17;
 
 }
@@ -59,7 +59,7 @@
     background-image: url("/photos/mehak3.jpg");
     background-size: cover;
     background-position: center;
-    grid-column:13/18;
+    grid-column:14/18;
     grid-row: 3/15;
 }
 
@@ -143,6 +143,11 @@
     font-size: 1.8rem;
     color: #656d4a;
   }
+
+
+  .about-text p {
+    margin-top: 7rem ;
+  }
   
  
  
@@ -191,6 +196,11 @@
         font-size: 1.4rem;
         margin-top: 1.2rem;
       }
+
+      .about-text p {
+        margin-top: 1rem;
+      }
+      
    
     
 } 
