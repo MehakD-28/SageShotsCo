@@ -49,7 +49,7 @@
   text-align: center;
   font-family: "Cormorant Garamond", serif; /* soft, elegant serif */
   font-weight: 400;
-  font-size: 28px; /* slightly smaller for balance */
+  font-size: 30px; /* slightly smaller for balance */
   color: #4b5842; /* deep sage green for harmony with your palette */
   line-height: 1.6;
   letter-spacing: 0.3px;
@@ -82,7 +82,7 @@
 .video1{
   left: 2%;
   top: 12%;
-  width: 22%;
+  width: 26%;
   height: 45%;
 }
 
@@ -90,7 +90,7 @@
 .video2{
   right: 3%;
   top: 12%;
-  width: 20%;
+  width: 25%;
   height: 44%;
 }
 
@@ -98,7 +98,7 @@
 .video3{
   left: 30%;
   top: 27%;
-  width: 35%;
+  width: 39%;
   height: 49%;
 }
 
@@ -106,7 +106,7 @@
 .video4{
   left: 6%;
   bottom: 6%;
-  width: 18%;
+  width: 20%;
   height: 30%;
 }
 
@@ -120,7 +120,7 @@
 
 
 @media (max-width: 1024px){
-  #head1 { font-size: 24px; top: 1%; }
+  #head1 { font-size: 28px; top: 1%; }
   .video1{ width: 22%; height: 46%; }
   .video2{ width: 20%; height: 46%; }
   .video3{ left: 30%; width: 33%; height: 45%; }
