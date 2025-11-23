@@ -10,6 +10,8 @@
 
 .card{
     margin: 0%;
+    border: none !important;
+    border-radius: 0px !important;
 }
 
 .servicesdetails {
@@ -61,6 +63,8 @@
     justify-content: center;
     gap: 12px;
     padding: 0 12px 2rem;
+    border: none !important;
+    border-radius: 0px !important;
 }
   
 .all-package {
@@ -86,6 +90,8 @@
 .services-four {
     height: auto;
     padding: 2rem 0;
+    border: none !important;
+    border-radius: 0px !important;
 }
   
 

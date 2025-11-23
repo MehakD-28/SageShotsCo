@@ -1,9 +1,10 @@
 .sage-date {
     position: relative;
     border: none !important;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16 / 6;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 0px;
+   
   }
   
   

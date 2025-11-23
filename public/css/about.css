@@ -112,7 +112,7 @@
     align-items: stretch;
     justify-content: center;
     gap: 2rem;
-    
+    aspect-ratio: 16 / 6;
     
     margin: 0 auto;
     box-sizing: border-box;
@@ -120,12 +120,15 @@
   
   .about-img {
     flex: 1 1 40%;
+    aspect-ratio: 16 / 6;
+    overflow: hidden
   }
   
   .about-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 
   }
   
@@ -149,7 +152,7 @@
     margin-top: 7rem ;
   }
   
- 
+
  
 
 @media( max-width: 767px){
@@ -199,6 +202,7 @@
 
       .about-text p {
         margin-top: 1rem;
+        
       }
       
    
@@ -208,4 +212,123 @@
 .reviewForm{
     height: 600px;
     overflow: auto;
+}
+
+
+.process-slide.centered {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.three-col {
+  display: flex;
+  align-items: center;   
+  gap: 3rem;
+}
+
+.left-col {
+  flex: 0 0 31%;
+}
+
+.left-col h3 {
+  font-family: "Crimson Text", serif;
+  font-size: 60px;
+  line-height: 1.15;
+  color: #707f62;
+  font-weight: 600;
+  margin: 0;
+}
+
+
+.middle-col {
+  flex: 0 0 28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vine-divider {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.right-col {
+  flex: 0 0 41%;
+}
+
+.right-col p {
+  font-family: "Crimson Text", serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #444;
+  margin: 0;
+}
+
+
+
+#processCarousel .carousel-control-prev,
+#processCarousel .carousel-control-next {
+  position: absolute !important;
+  top: 50% !important;                  
+  bottom: auto !important;
+  width: 70px !important;
+  height: 70px !important;
+  background: none !important;
+  opacity: 1 !important;
+  border: none !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  z-index: 40;
+  padding: 0;
+  margin: 0;
+  pointer-events: auto;                  
+}
+
+
+#processCarousel .carousel-control-prev {
+  left: 0;
+  transform: translate(100%, -50%);        
+}
+
+
+#processCarousel .carousel-control-next {
+  right: 0;
+  transform: translate(10%, -50%);
+}
+
+
+#processCarousel .carousel-control-prev-icon,
+#processCarousel .carousel-control-next-icon {
+  display: none !important;
+}
+
+
+.sageleaf {
+  width: 75px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.sage-left {
+  transform: rotate(180deg);
+}
+
+.sage-right {
+  transform: rotate(0deg);
+}
+
+.sage-left:hover {
+  transform: rotate(180deg) scale(1.12);
+}
+
+.sage-right:hover {
+  transform: scale(1.12);
 }
