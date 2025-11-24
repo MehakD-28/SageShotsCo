@@ -203,7 +203,7 @@
 
     
 .all-package-container {
-  padding: 0;
+  padding:  0px 25px;
 }
 
   #rightborder {
@@ -273,15 +273,15 @@
 
   .video-container {
       width: 100%;
-      max-width: 260px;          
-      aspect-ratio: 10 / 16;     
+      max-width: 350px;          
+      aspect-ratio: 11 / 17;     
       margin: 0 auto;
       overflow: hidden;
   }
 
   .service_video {
     justify-content: flex-start !important; 
-    padding-left: 50px !important; 
+    padding-left: 100px !important; 
     padding-top: 30px !important; 
   }
 

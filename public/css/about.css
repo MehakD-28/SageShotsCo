@@ -50,10 +50,7 @@
     grid-row: 1/17;
 
 }
-/* .videomehak{
-    grid-column:7/13;
-    grid-row: 1/17;
-} */
+
 
 .mehak3{
     background-image: url("/photos/mehak3.jpg");
@@ -165,10 +162,10 @@
       }
 
     .mehatext{
-        height: 270px;
+        height: 220px;
     }
     .mehatext h3{
-        font-size:60px ;
+        font-size:3rem ;
         text-align: center;
     }
     #text2{
@@ -182,28 +179,112 @@
     }
 
     .about {
-        flex-direction: column; 
-        margin-bottom: 40px;
-      }
-    
-      .about-img {
-        order: 1;
-      }
-    
-      .about-text {
-        order: 2;
-        padding: 1rem;
-      }
-    
-      .about-text h3 {
-        font-size: 1.4rem;
-        margin-top: 1.2rem;
-      }
+      flex-direction: column !important;
+      aspect-ratio: auto !important;   /* remove forced ratio */
+      gap: 1rem;
+      padding: 0;
+  }
 
-      .about-text p {
-        margin-top: 1rem;
-        
-      }
+  /* IMAGE SECTION */
+  .about-img {
+      width: 100%;
+      flex: none !important;
+      aspect-ratio: auto !important;   /* let height adjust naturally */
+      overflow: hidden;
+  }
+
+  .about-img img {
+      width: 100%;
+      height: auto;                    /* natural proportional height */
+      object-fit: cover;
+  }
+
+  /* TEXT SECTION */
+  .about-text {
+      width: 100%;
+      flex: none !important;
+      padding: 1rem 1.2rem;
+      line-height: 1.7;
+  }
+
+  /* Remove giant top margin on mobile */
+  .about-text p {
+      margin-top: 1rem !important;
+  }
+
+  .about-text h2,
+  .about-text h3 {
+      margin: 1.2rem 0 0.8rem;
+  }
+ .three-col {
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.left-col {
+  width: 100%;
+  flex: 0 0 auto !important;
+  height: auto !important;
+  text-align: center;
+}
+
+.left-col h3 {
+  font-size: 32px !important;
+  line-height: 1.25;
+  margin: 0;
+}
+
+
+.middle-col {
+  display: none !important;
+}
+
+.right-col {
+  width: 100%;
+  flex: 0 0 auto !important;
+  height: auto !important;
+}
+
+.right-col p {
+  font-size: 14px !important;
+  line-height: 1.6;
+}
+
+
+#processCarousel {
+  padding-bottom: 80px !important;
+  position: relative;
+}
+
+
+#processCarousel .carousel-control-prev,
+    #processCarousel .carousel-control-next {
+        position: absolute !important;
+        top: auto !important;
+        bottom: 25px !important;
+        width: 50px !important;
+        height: 50px !important;
+        transform: none !important;
+        z-index: 999 !important;
+    }
+
+#processCarousel .carousel-control-prev {
+  left: 33% !important;
+  transform: translate(8%, 260%) !important; 
+}
+
+
+#processCarousel .carousel-control-next {
+  right: 33% !important;
+  transform: translate(-16%, 260%) !important;
+}
+
+
+.sageleaf {
+  width: 45px !important;
+  height: auto;
+}
       
    
     
