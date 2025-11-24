@@ -108,6 +108,11 @@
  
 }
 
+#head1 img{
+  height: 9rem;
+  width: auto;
+}
+
 @media (max-width: 1024px) {
 
   .video {
@@ -125,7 +130,7 @@
   }
 
   #head1 img{
-    height: 80px;
+    height: 90px;
     width: auto;
   }
 
