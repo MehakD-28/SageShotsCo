@@ -180,26 +180,26 @@
 
     .about {
       flex-direction: column !important;
-      aspect-ratio: auto !important;   /* remove forced ratio */
+      aspect-ratio: auto !important;  
       gap: 1rem;
       padding: 0;
   }
 
-  /* IMAGE SECTION */
+  
   .about-img {
       width: 100%;
       flex: none !important;
-      aspect-ratio: auto !important;   /* let height adjust naturally */
+      aspect-ratio: auto !important;   
       overflow: hidden;
   }
 
   .about-img img {
       width: 100%;
-      height: auto;                    /* natural proportional height */
+      height: auto;                    
       object-fit: cover;
   }
 
-  /* TEXT SECTION */
+  
   .about-text {
       width: 100%;
       flex: none !important;
@@ -207,7 +207,7 @@
       line-height: 1.7;
   }
 
-  /* Remove giant top margin on mobile */
+  
   .about-text p {
       margin-top: 1rem !important;
   }
