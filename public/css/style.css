@@ -273,7 +273,7 @@
 
   .video-container {
       width: 100%;
-      max-width: 350px;          
+      max-width: 600px;          
       aspect-ratio: 11 / 17;     
       margin: 0 auto;
       overflow: hidden;

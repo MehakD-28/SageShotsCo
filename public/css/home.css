@@ -47,10 +47,10 @@
 
 #head1 {
   text-align: center;
-  font-family: "Cormorant Garamond", serif; /* soft, elegant serif */
+  font-family: "Cormorant Garamond", serif; 
   font-weight: 400;
-  font-size: 30px; /* slightly smaller for balance */
-  color: #4b5842; /* deep sage green for harmony with your palette */
+  font-size: 30px; 
+  color: #4b5842; 
   line-height: 1.6;
   letter-spacing: 0.3px;
   width: min(90%, 70ch);
@@ -58,11 +58,11 @@
   padding: 2.5rem 1rem;
 }
 
-/* Accent text (highlighted words) */
+
 #head1 span {
   font-style: italic;
   font-weight: 600;
-  color: #8c9b7a; /* muted moss green */
+  color: #8c9b7a; 
   text-decoration: underline 1px #b7c3a1;
   text-underline-offset: 3px;
 }
@@ -129,44 +129,71 @@
 }
 
 
-/* === MOBILE PORTRAIT (iOS-SAFE) === */
 @media (max-width: 768px) and (orientation: portrait) {
-  .video {
-    display: grid;
-    grid-template-columns: 1fr;   /* 1 column layout */
-    gap: 12px;
-    padding: 12px;
-    aspect-ratio: auto;
-    max-width: 90vw;
+  video {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
     margin: 0 auto;
-    height:fit-content;
+    aspect-ratio: 9 / 13;
+    overflow: hidden;
   }
 
   #head1 {
     position: static;
     text-align: center;
     font-size: 20px;
-    margin: 0 0 10px 0;
+    margin: 0 0 18px 0;
+    z-index: 10;
   }
 
+  #head1 span {
+    margin-left: 100px !important;
+  }
 
   .protfolio {
-    position: relative;
-    display: block;
-    width: 70%;
-    height: auto;
-    aspect-ratio: 9 / 16;  
+    position: absolute !important;
+    object-fit: cover;
+    width: 45%;
+    height: 50%;
     
   }
 
-  .video1, .video5 {
-    display: none !important;
+
+  .video2 {
+    left: 0%;
+    top: 8%;
+    width: 55%;
+    height: 30%;
+    z-index: 2;
+    transform: rotate(-2deg);
   }
 
-  .video2 { order: 1; }
-  .video3 { order: 2;
-  top:6% }
-  .video4 { order: 3; }
+  /* Big center one */
+  .video3 {
+    left: 28%;
+    top: 34%;
+    width: 60%;
+    height: 30%;
+    z-index: 3;
+    transform: rotate(2deg);
+  }
+
+  /* Bottom left */
+  .video4 {
+    left: 12%;
+    bottom: 6%;
+    width: 56%;
+    height: 32%;
+    z-index: 4;
+    transform: rotate(-2deg);
+  }
+
+  /* Optional: hide edges if too much overlap */
+  .video1, 
+  .video5 {
+    display: none !important;   /* keep it clean */
+  }
 }
 
 
@@ -179,7 +206,7 @@
  .rv {
     position: relative;
     display: grid;
-    grid-template-columns: auto 1fr 1fr auto; /* arrow | video | content | arrow */
+    grid-template-columns: auto 1fr 1fr auto; 
     align-items: center;
     gap: 1.5rem;
     max-width: 1100px;
@@ -192,11 +219,11 @@
   .rv-heading {
     position: absolute;
     top: 10px;
-    right: 30px;              /* aligns text to the end/right side */
-    text-align: end;          /* ensures right alignment */
+    right: 30px;              
+    text-align: end;          
     font-size: 5rem;
     font-family: "Dancing Script", cursive;
-    color: rgba(0, 0, 0, 0.05); /* subtle, watermark effect */
+    color: rgba(0, 0, 0, 0.05); 
     letter-spacing: 1px;
     margin: 0;
     z-index: 0;
@@ -210,12 +237,9 @@
     position: relative;
     color: #333;
   }
-  
-  
-  
 
   .rv-nav {
-    position: relative; /* stays in grid flow */
+    position: relative; 
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -227,7 +251,7 @@
   }
   .rv-nav:hover { background: rgba(0, 0, 0, 0.15); }
   
-  /* Video and content same height */
+ 
   .rv-video-panel {
     border-radius: 16px;
     overflow: hidden;
@@ -244,7 +268,7 @@
     display: block;
   }
   
-  /* Review content area */
+
   .rv-content {
     background: #fff;
     border-radius: 16px;
@@ -262,7 +286,7 @@
     max-width: 500px;
   }
   
-  /* Dots below text */
+
   .rv-dots {
     display: flex;
     justify-content: center;
@@ -279,26 +303,85 @@
   }
   .rv-dot[aria-selected="true"] { background: #111; }
   
-  /* Mobile adjustments */
-  @media (max-width: 768px) {
-    .rv {
-      grid-template-columns: 1fr; /* one column layout */
-    }
-    .rv-video-panel {
-      display: none; /* hide video */
-    }
-    .rv-nav {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-    .rv-prev { left: 10px; }
-    .rv-next { right: 10px; }
+    @media (max-width: 768px) {
 
-    .rv-heading {
-        text-align: center;       
-        font-size: 2rem;
-        
+      
+      .reviews-section {
+          background-color: transparent !important;
+          padding: 0.5rem 0 0 !important;
+          margin: 0 !important;
       }
-  }
-  
+    
+      
+      .rv {
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: center !important;
+          justify-content: flex-start !important;
+          gap: 1rem !important;
+          width: 100%;
+          max-width: 420px;          
+          margin: 0 auto !important; 
+          padding: 0 !important;     
+          height: auto !important;   
+      }
+    
+      
+      .rv-video-panel {
+          display: none !important;
+      }
+    
+     
+      .rv-content {
+          width: 100%;
+          border-radius: 0px;
+          padding: 1.2rem !important;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+          height: auto !important;
+          background-color: rgb(180, 191, 170,0.4);
+      }
+    
+      .rv-inner {
+          text-align: center;
+          height: auto !important;
+      }
+    
+      .rv-quote {
+          font-size: 1rem !important;
+          line-height: 1.6 !important;
+          margin: 0 !important;
+      }
+    
+      
+      .rv-title h3,
+      .rv-title p {
+          margin: 0.3rem 0 !important;
+      }
+    
+      
+      .rv-dots {
+          margin-top: 0.5rem !important;
+      }
+    
+      
+      .rv-nav {
+          position: absolute !important;
+          top: 45% !important;
+          transform: translateY(-50%);
+          background: rgba(0,0,0,0.07);
+          width: 40px;
+          height: 40px;
+      }
+      .rv-prev { left: -5px !important; }
+      .rv-next { right: -5px !important; }
+    
+      .rv-heading {
+          position: relative !important;
+          font-size: 2.2rem !important;
+          color: #65745a !important;
+          text-align: start !important;
+          right: 0 !important;
+          margin-bottom: 0.5rem !important;
+          padding: 1rem !important;
+      }
+    }
