@@ -227,6 +227,8 @@
   flex: 0 0 auto !important;
   height: auto !important;
   text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .left-col h3 {
@@ -271,13 +273,13 @@
 
 #processCarousel .carousel-control-prev {
   left: 33% !important;
-  transform: translate(8%, 260%) !important; 
+  transform: translate(8%, 340%) !important; 
 }
 
 
 #processCarousel .carousel-control-next {
   right: 33% !important;
-  transform: translate(-16%, 260%) !important;
+  transform: translate(-16%, 340%) !important;
 }
 
 
@@ -343,10 +345,10 @@
 }
 
 .right-col p {
-  font-family: "Crimson Text", serif;
+  color: #656d4a;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 1.5;
-  color: #444;
   margin: 0;
 }
 
@@ -374,13 +376,13 @@
 
 #processCarousel .carousel-control-prev {
   left: 0;
-  transform: translate(100%, -50%);        
+  transform: translate(30%, -50%) ;        
 }
 
 
 #processCarousel .carousel-control-next {
   right: 0;
-  transform: translate(10%, -50%);
+  transform: translate(-30%, -50%)   ;
 }
 
 

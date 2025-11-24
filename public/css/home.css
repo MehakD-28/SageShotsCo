@@ -101,11 +101,11 @@
 }
 
 #head1{
-  left: 33%;
-  top: 3%;
-  font-size: 2rem;
-  color:#656D4A;
-  font-family: Arial, Helvetica, sans-serif;
+  left: 20%;
+  top: 0%;
+ height: 6rem;
+ width: 30rem;
+ 
 }
 
 @media (max-width: 1024px) {
@@ -122,6 +122,11 @@
     top: 6%;
     left: 28%;
     padding-bottom: 1rem; 
+  }
+
+  #head1 img{
+    height: 80px;
+    width: auto;
   }
 
   .protfolio {
@@ -188,11 +193,16 @@
   }
 
   #head1 {
-    position: static;
-    text-align: center;
+    top: 0%;
+    left: 10%;
     font-size: 20px;
     margin: 0 0 18px 0;
     z-index: 10;
+  }
+
+  #head1 img{
+    height: 60px;
+    width: auto;
   }
 
   #head1 span {
