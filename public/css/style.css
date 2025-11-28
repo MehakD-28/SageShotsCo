@@ -313,3 +313,6 @@
     object-fit: cover;
   }
   
+.service-photo{
+  border-radius: 0px !important;
+}
