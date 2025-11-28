@@ -152,13 +152,29 @@
 
 }
 @media (max-width: 600px) {
-    .sage-date p.sage {
-        font-size: 0.8rem;
+    .sage-date {
+        aspect-ratio: 6 / 3 !important;  
     }
+
+    .sage-date .sage-content {
+        top: 55% !important;             
+        transform: translate(-50%, -50%);
+        padding: 0 20px;                 
+    }
+  
+    
+    .sage-date p.sage {
+        font-size: 0.9rem !important;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+    }
+  
+   
     .sage-date a.btn {
-        font-size: 0.8rem;
-        padding: 8px 20px;
-      }
+        font-size: 0.4rem !important;
+        padding: 6px 18px !important;
+        border-radius: 40px;
+    }
     .footer-videos{
         height: 200px;
     }
