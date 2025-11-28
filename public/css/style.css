@@ -313,6 +313,6 @@
     object-fit: cover;
   }
   
-.service-photo{
+.card .mb-3.service-photo{
   border-radius: 0px !important;
 }

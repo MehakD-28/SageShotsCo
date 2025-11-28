@@ -154,6 +154,7 @@
 @media (max-width: 600px) {
     .sage-date {
         aspect-ratio: 6 / 3 !important;  
+        border-radius: 0px;
     }
 
     .sage-date .sage-content {
