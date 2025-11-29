@@ -138,7 +138,7 @@
   }
   
   .about-text h3 {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     font-weight: 300;
     font-size: 1.8rem;
     color: #656d4a;
@@ -146,11 +146,9 @@
 
 
   .about-text p {
-    margin-top: 7rem ;
+    margin-top: 4rem ;
   }
   
-
- 
 
 @media( max-width: 767px){
     .mehak3{ display: none !important; }

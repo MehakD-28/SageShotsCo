@@ -196,6 +196,9 @@
 }
 
 @media (max-width: 575px) {
+    .servicesdetails h3 span {  /*need to fix this*/
+    font-size: 4rem !important;
+  }
 
     .all-package {
       padding: 10px 8px;
@@ -303,6 +306,9 @@
     .servicesdetails p {
       padding: 0 16px 24px;
       font-size: 16px;
+    }
+    .card-text .content-details .service-content{
+      margin-top: 20px !important;
     }
   
   }

@@ -9,6 +9,12 @@
    
 }
 
+
+
+.rv-mobile-wrapper {
+  display: none;
+}
+
 .loveletters{
     height: 300px !important;
     background-color: #656D4A !important;
@@ -202,8 +208,8 @@
   }
 
   #head1 {
-    top: 0%;
-    left: 10%;
+    top: -2%;
+    left: 12%;
     font-size: 20px;
     margin: 0 0 18px 0;
     z-index: 10;
@@ -228,7 +234,7 @@
 
 
   .video2 {
-    left: 0%;
+    left: -20% !important;
     top: 8%;
     width: 55%;
     height: 30%;
@@ -240,7 +246,7 @@
   /* Big center one */
   .video3 {
     left: 28%;
-    top: 34%;
+    top: 32%;
     width: 60%;
     height: 30%;
     z-index: 3;
@@ -251,7 +257,7 @@
   /* Bottom left */
   .video4 {
     left: 12%;
-    bottom: 6%;
+    bottom: 10%;
     width: 56%;
     height: 32%;
     z-index: 4;
@@ -481,6 +487,4 @@
     }
 }
 
-.card{
-  border-radius: 0px!important;
-}
+
