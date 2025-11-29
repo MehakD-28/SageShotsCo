@@ -232,7 +232,7 @@
 }
 
 .left-col h3 {
-  font-size: 32px !important;
+  font-size: 36px !important;
   line-height: 1.25;
   margin: 0;
 }
@@ -273,13 +273,13 @@
 
 #processCarousel .carousel-control-prev {
   left: 33% !important;
-  transform: translate(8%, 340%) !important; 
+  transform: translate(8%, 360%) !important; 
 }
 
 
 #processCarousel .carousel-control-next {
   right: 33% !important;
-  transform: translate(-16%, 340%) !important;
+  transform: translate(-16%, 360%) !important;
 }
 
 
@@ -318,8 +318,8 @@
 }
 
 .left-col h3 {
-  font-family: "Crimson Text", serif;
-  font-size: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 55px;
   line-height: 1.15;
   color: #707f62;
   font-weight: 600;

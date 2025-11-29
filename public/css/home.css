@@ -234,7 +234,7 @@
     height: 30%;
     z-index: 2;
     border-radius: 0px;
-    transform: rotate(-2deg);
+    
   }
 
   /* Big center one */
@@ -245,7 +245,7 @@
     height: 30%;
     z-index: 3;
     border-radius: 0px;
-    transform: rotate(2deg);
+    
   }
 
   /* Bottom left */
@@ -256,7 +256,7 @@
     height: 32%;
     z-index: 4;
     border-radius: 0px;
-    transform: rotate(-2deg);
+    
   }
 
   /* Optional: hide edges if too much overlap */
@@ -383,6 +383,11 @@
         display: none !important;
     }
 
+    .rv-heading {
+      font-size: 4rem;
+      text-align: center;
+    }
+
     /* wrapper */
     .rv-mobile-wrapper {
         display: flex !important;
@@ -474,4 +479,8 @@
         justify-content: center;
         align-items: center;
     }
+}
+
+.card{
+  border-radius: 0px!important;
 }
