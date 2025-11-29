@@ -64,10 +64,31 @@
         <button class="rv-nav rv-next" aria-label="Next review" type="button">&#10095;</button>
       
   
+        <div class="rv-mobile-wrapper">
+
+          <div class="rv-mobile-card">
+            <div class="rv-tape rv-tape-top-left"></div>
+            <div class="rv-tape rv-tape-bottom-right"></div>
+        
+            <div class="rv-paper">
+              <h3 class="rv-mobile-name"></h3>
+              <p class="rv-mobile-text"></p>
+            </div>
+          </div>
+        
+          <div class="rv-mobile-dots"></div>
+        
+          <button class="rv-mobile-next">›</button>
+        
+        </div>
+        
+
   <script id="reviews-data" type="application/json">
     <%- JSON.stringify(reviews || []) %>
   </script>
   <script src="/js/reviews-rotator.js" defer></script>
+
+
   
 </section>
 </div>

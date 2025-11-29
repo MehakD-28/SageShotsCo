@@ -373,88 +373,105 @@
   }
   .rv-dot[aria-selected="true"] { background: #111; }
   
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
 
-      
-      .reviews-section {
-          /* background-color: transparent !important; */
-          padding: 0.5rem 0 0 !important;
-          margin: 0 !important;
-      }
-    
-      
-      .rv {
-          display: flex !important;
-          flex-direction: column !important;
-          align-items: center !important;
-          justify-content: flex-start !important;
-          gap: 1rem !important;
-          width: 100%;
-          max-width: 420px;          
-          margin: 0 auto !important; 
-          padding: 0 !important;     
-          height: auto !important;   
-      }
-    
-      
-      .rv-video-panel {
-          display: none !important;
-      }
-    
-     
-      .rv-content {
-          width: 100%;
-          border-radius: 0px;
-          padding: 1.2rem !important;
-          box-shadow: 0 5px 15px rgba(0,0,0,0.06);
-          height: auto !important;
-          background-color:rgb(221, 229, 210,0.4);
-      }
-    
-      .rv-inner {
-          text-align: center;
-          height: auto !important;
-      }
-    
-      .rv-quote {
-          font-size: 1rem !important;
-          line-height: 1.6 !important;
-          margin: 0 !important;
-      }
-    
-      
-      .rv-title h3,
-      .rv-title p {
-          margin: 0.3rem 0 !important;
-      }
-    
-      
-      .rv-dots {
-          margin-top: 0.5rem !important;
-      }
-    
-      
-      .rv-nav {
-          position: absolute !important;
-          top: 45% !important;
-          transform: translateY(-50%);
-          background: rgba(0,0,0,0.07);
-          width: 40px;
-          height: 40px;
-      }
-      .rv-prev { left: -5px !important; }
-      .rv-next { right: -5px !important; }
-    
-      .rv-heading {
-          position: relative !important;
-          font-size: 2.2rem !important;
-          color: #65745a !important;
-          text-align: start !important;
-          right: 0 !important;
-          margin-bottom: 0.5rem !important;
-          padding: 1rem !important;
-      }
+    /* hide desktop layout */
+    .rv-video-panel,
+    .rv-content,
+    .rv-prev,
+    .rv-next {
+        display: none !important;
     }
 
+    /* wrapper */
+    .rv-mobile-wrapper {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+        width: 100%;
+        gap: 1.4rem;
+        margin-left: 40px;
+    }
 
-    
+    /* review card */
+    .rv-mobile-card {
+        position: relative;
+        width: 88%;
+        background: #ffffff;
+        padding: 2.2rem 1.6rem ;
+        border-radius: 8px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+        text-align: center;                 /* center content */
+        overflow: visible;
+    }
+
+    /* TAPE: Top-left + Bottom-right */
+    .rv-tape {
+        position: absolute;
+        width: 70px;
+        height: 26px;
+        background: rgba(245, 234, 200, 0.85);
+        border-radius: 4px;
+        z-index: 10;
+    }
+
+    .rv-tape-top-left {
+        top: -12px;
+        left: -10px;
+        transform: rotate(-6deg);
+    }
+
+    .rv-tape-bottom-right {
+        bottom: -12px;
+        right: -10px;
+        transform: rotate(8deg);
+    }
+
+    /* CONTENT */
+    .rv-mobile-name {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .rv-mobile-text {
+        font-size: 1rem;
+        line-height: 1.65;
+        color: #444;
+    }
+
+    /* dots */
+    .rv-mobile-dots {
+        display: flex;
+        gap: 7px;
+        justify-content: center;
+        margin-top: 0.3rem;
+    }
+
+    .rv-mobile-dots span {
+        width: 8px;
+        height: 8px;
+        background: #ccc;
+        border-radius: 50%;
+    }
+
+    .rv-mobile-dots .active {
+        background: #333;
+    }
+
+    /* next button */
+    .rv-mobile-next {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: none;
+        background: rgba(0,0,0,0.08);
+        font-size: 1.6rem;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -415,3 +415,8 @@
 .sage-right:hover {
   transform: scale(1.12);
 }
+
+
+  .tagline {
+    font-style: italic;
+  }

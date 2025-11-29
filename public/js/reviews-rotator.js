@@ -18,6 +18,12 @@ window.REVIEWS = JSON.parse(raw);
     const prevBtn = document.querySelector(".rv-prev");
     const nextBtn = document.querySelector(".rv-next");
     const dotsWrap = document.querySelector(".rv-dots");
+
+    // Mobile elements
+    const mobileNameEl = document.querySelector(".rv-mobile-name");
+    const mobileTextEl = document.querySelector(".rv-mobile-text");
+    const mobileDotsWrap = document.querySelector(".rv-mobile-dots");
+    const mobileNextBtn = document.querySelector(".rv-mobile-next");  
   
     // Helpers
     const escapeHtml = (s) =>
@@ -45,6 +51,25 @@ window.REVIEWS = JSON.parse(raw);
         d.setAttribute("aria-selected", i === index ? "true" : "false")
       );
     }
+
+
+    function renderMobileDots() {
+      if (!mobileDotsWrap) return;
+      mobileDotsWrap.innerHTML = "";
+      data.forEach((_, i) => {
+        const dot = document.createElement("span");
+        dot.className = (i === index) ? "active" : "";
+        mobileDotsWrap.appendChild(dot);
+      });
+    }
+    
+    function updateMobileDots() {
+      if (!mobileDotsWrap) return;
+      mobileDotsWrap.querySelectorAll("span").forEach((d, i) => {
+        d.className = (i === index) ? "active" : "";
+      });
+    }
+    
   
     function loadVideoFor(review) {
       // On mobile we hide the video panel with CSS. Still set src for desktop/tablet.
@@ -67,15 +92,32 @@ window.REVIEWS = JSON.parse(raw);
       }
     }
   
+    // function render() {
+    //   const r = data[index] || {};
+    //   nameEl.textContent = escapeHtml(r.name || "Anonymous");
+    //   roleEl.textContent = escapeHtml(r.role || "");
+    //   quoteEl.textContent = escapeHtml(r.review || "");
+    //   loadVideoFor(r);
+    //   updateDots();
+    // }
+  
+
     function render() {
       const r = data[index] || {};
+    
+      // Desktop updates
       nameEl.textContent = escapeHtml(r.name || "Anonymous");
       roleEl.textContent = escapeHtml(r.role || "");
       quoteEl.textContent = escapeHtml(r.review || "");
       loadVideoFor(r);
       updateDots();
+    
+      // Mobile updates
+      if (mobileNameEl) mobileNameEl.textContent = r.name || "";
+      if (mobileTextEl) mobileTextEl.textContent = r.review || "";
+      renderMobileDots();
     }
-  
+    
     function goTo(i) {
       index = (i + data.length) % data.length;
       render();
@@ -86,6 +128,10 @@ window.REVIEWS = JSON.parse(raw);
     // Events
     nextBtn.addEventListener("click", next);
     prevBtn.addEventListener("click", prev);
+
+    if (mobileNextBtn) {
+      mobileNextBtn.addEventListener("click", next);
+    }
   
     // Keyboard navigation
     document.addEventListener("keydown", (e) => {

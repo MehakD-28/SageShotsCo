@@ -3,7 +3,7 @@
     border: none !important;
     aspect-ratio: 16 / 6;
     overflow: hidden;
-    border-radius: 0px;
+    border-radius: 0px !important;
    
   }
   
@@ -154,7 +154,7 @@
 @media (max-width: 600px) {
     .sage-date {
         aspect-ratio: 6 / 3 !important;  
-        border-radius: 0px;
+        border-radius: 0px !important;
     }
 
     .sage-date .sage-content {
